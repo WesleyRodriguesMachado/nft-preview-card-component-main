@@ -1,0 +1,62 @@
+body{
+    /* background: var(--main-BG);*/
+    font-family: 'Outfit'; 
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height: 100vh;
+}
+
+.nft-card{
+    background: var(--card-BG);
+    max-width: 435px;
+    padding: 27px;
+    border-radius: 15px;
+}
+
+.nft-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nft-card h2{
+    color: #fff;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    font-size: 28px;
+}
+
+.nft-card p{
+    text-align: left;
+    color: var(--Soft);
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.nft-card .price-component{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft-card .price-component .price{
+    color:var(--light);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.price::before{
+    content: '';
+    background-size: 12px;
+    background-image: url(../images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 11px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
